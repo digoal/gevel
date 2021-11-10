@@ -14,7 +14,7 @@ If you have installed PostgreSQL by your package manager then it is likely that 
 Then run the script:
 
 ```shell
-sudo ./install.sh
+$ sudo ./install.sh
 ```
 
 ## How to use
@@ -25,4 +25,18 @@ You have to create the extension and then check if it works.
 DROP EXTENSION IF EXISTS gevel;
 CREATE EXTENSION gevel;
 SELECT gist_print('name_of_your_gist_index');
+```
+
+### Try with Docker
+
+Build an image from the Dockerfile and assign it a name.
+
+```shell
+$ docker build -t eg_postgresql .
+```
+
+Run the PostgreSQL server container (in the foreground):
+
+```shell
+$ docker run --rm -P --name pg_test eg_postgresql
 ```
