@@ -1,0 +1,6 @@
+# C
+*.o
+*.so
+
+# Visual Studio Code
+.vscode/

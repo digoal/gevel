@@ -1,7 +1,7 @@
 # gevel
 
 This is a clone of the [original](http://www.sigaev.ru/git/gitweb.cgi?p=gevel.git;a=summary) *gevel* implementation by *Teodor Sigaev*.
-I've changed some of the files to make it compatible with PostgreSQL v13.4.
+I've changed some of the files to make it compatible with PostgreSQL v14.2.
 
 ## How to install
 

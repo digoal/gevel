@@ -1,5 +1,5 @@
 # gevel extension
-comment = 'gevel extension for PostgreSQL 13.4'
+comment = 'gevel extension for PostgreSQL 14.2'
 default_version = '1.0'
 module_pathname = '$libdir/gevel'
 relocatable = false
