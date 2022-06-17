@@ -371,15 +371,15 @@ gist_stat(PG_FUNCTION_ARGS) {
 	pfree(relname);
 
 	sprintf(ptr,
-		"Number of levels:		  %d\n"
-		"Number of pages:		   %d\n"
-		"Number of leaf pages:	  %d\n"
-		"Number of tuples:		  %d\n"
-		"Number of invalid tuples:  %d\n"
-		"Number of leaf tuples:	 %d\n"
-		"Total size of tuples:	  "INT64_FORMAT" bytes\n"
-		"Total size of leaf tuples: "INT64_FORMAT" bytes\n"
-		"Total size of index:	   "INT64_FORMAT" bytes\n",
+		"Number of levels:			%d\n"
+		"Number of pages:			%d\n"
+		"Number of leaf pages:		%d\n"
+		"Number of tuples:			%d\n"
+		"Number of invalid tuples:	%d\n"
+		"Number of leaf tuples:		%d\n"
+		"Total size of tuples:		"INT64_FORMAT" bytes\n"
+		"Total size of leaf tuples:	"INT64_FORMAT" bytes\n"
+		"Total size of index:		"INT64_FORMAT" bytes\n",
 		info.level+1,
 		info.numpages,
 		info.numleafpages,
@@ -1708,15 +1708,15 @@ btree_stat(PG_FUNCTION_ARGS)
 	btree_index_close(index);
 
 	sprintf(ptr,
-		"Number of levels:		  %d\n"
-		"Number of pages:		   %d\n"
-		"Number of leaf pages:	  %d\n"
-		"Number of tuples:		  %d\n"
-		"Number of invalid tuples:  %d\n"
-		"Number of leaf tuples:	 %d\n"
-		"Total size of tuples:	  "INT64_FORMAT" bytes\n"
-		"Total size of leaf tuples: "INT64_FORMAT" bytes\n"
-		"Total size of index:	   "INT64_FORMAT" bytes\n",
+		"Number of levels:			%d\n"
+		"Number of pages:			%d\n"
+		"Number of leaf pages:		%d\n"
+		"Number of tuples:			%d\n"
+		"Number of invalid tuples:	%d\n"
+		"Number of leaf tuples:		%d\n"
+		"Total size of tuples:		"INT64_FORMAT" bytes\n"
+		"Total size of leaf tuples:	"INT64_FORMAT" bytes\n"
+		"Total size of index:		"INT64_FORMAT" bytes\n",
 		btreeIdxInfo.idxStat.level+1,
 		btreeIdxInfo.idxStat.numpages,
 		btreeIdxInfo.idxStat.numleafpages,
@@ -2092,12 +2092,12 @@ brin_stat(PG_FUNCTION_ARGS)
 	brinRevmapTerminate(revmap);
 
 	sprintf(ptr,
-		"Number of revmap pages: 	%d\n"
+		"Number of revmap pages:		%d\n"
 		"Number of empty revmap pages:	%d\n"
-		"Number of regular pages:	%d\n"
-		"Number of tuples: 		%d\n"
-		"Used space 		"INT64_FORMAT" bytes\n"
-		"Free space 		"INT64_FORMAT" bytes\n",
+		"Number of regular pages:		%d\n"
+		"Number of tuples:				%d\n"
+		"Used space						"INT64_FORMAT" bytes\n"
+		"Free space						"INT64_FORMAT" bytes\n",
 		numRevmapPages,
 		numEmptyPages,
 		numRegularPages,
