@@ -2,9 +2,9 @@
 
 set -e
 
-POSTGRESQL_INCLUDE_DIRECTORY="/usr/include/postgresql/14/server"
-POSTGRESQL_EXTENSION_DIRECTORY="/usr/share/postgresql/14/extension"
-POSTGRESQL_LIBRARY_DIRECTORY="/usr/lib/postgresql/14/lib"
+POSTGRESQL_INCLUDE_DIRECTORY="/usr/include/postgresql/15/server"
+POSTGRESQL_EXTENSION_DIRECTORY="/usr/share/postgresql/15/extension"
+POSTGRESQL_LIBRARY_DIRECTORY="/usr/lib/postgresql/15/lib"
 
 function create_and_copy_so() {
   cp -n "gevel.c" "gevel_tmp.c"
